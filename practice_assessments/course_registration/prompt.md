@@ -1,6 +1,6 @@
 # Course Registration
 
-This is an original practice variant based on publicly reported Anthropic student/course-registration OAs, not a verbatim assessment prompt.
+This is an original progressive practice exercise, not a verbatim assessment prompt.
 
 Read one level at a time and implement `solution.py`:
 

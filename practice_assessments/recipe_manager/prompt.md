@@ -1,6 +1,6 @@
 # Recipe Manager
 
-This is an original practice variant based on the publicly reported Anthropic recipe-manager family, not a verbatim assessment prompt.
+This is an original progressive practice exercise, not a verbatim assessment prompt.
 
 Read `level1.md` through `level4.md` one at a time. Implement `solution.py` and run only the current level test:
 

@@ -1,6 +1,6 @@
 # Chinese Restaurant Process
 
-This is an original practice variant inspired by the Chinese Restaurant Process topic reportedly mentioned for an Omnifold CodeSignal. It is not a verbatim assessment prompt, and no credible public copy of the company-specific question was found.
+This is an original practice exercise based on the standard Chinese Restaurant Process. It is not a verbatim assessment prompt or a reconstruction of proprietary interview content.
 
 Read `level1.md` through `level4.md` one at a time. Implement `solution.py` and run only the current level test:
 
@@ -12,4 +12,3 @@ python3 -m unittest test_solution.TestChineseRestaurant.test_level_4_forks
 ```
 
 The restaurant uses deterministic integer tickets instead of random numbers so every outcome can be tested exactly.
-
