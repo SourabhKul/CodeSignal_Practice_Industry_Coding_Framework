@@ -17,6 +17,7 @@
 | Drill | Core skills |
 | --- | --- |
 | `chinese_restaurant_process` | weighted simulation, state snapshots, forks |
+| `indian_buffet_process` | latent features, binary matrices, popularity, snapshots |
 | `time_versioned_kv` | time versions, historical reads, compaction |
 | `inventory_orders` | stock, reservations, aggregation, reporting |
 | `package_manager` | dependency graphs, cycle checks, removal |

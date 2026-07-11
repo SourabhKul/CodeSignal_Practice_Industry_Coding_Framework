@@ -22,6 +22,7 @@ Start with the stateful-system scenarios:
 Additional transfer drills:
 
 - `chinese_restaurant_process`
+- `indian_buffet_process`
 - `time_versioned_kv`
 - `inventory_orders`
 - `package_manager`

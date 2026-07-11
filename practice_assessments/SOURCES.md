@@ -13,3 +13,8 @@ These exercises are original practice material. The sources below describe the a
 
 - [Interactive Chinese Restaurant Process simulation](https://gerin.perso.math.cnrs.fr/ChineseRestaurant.html)
 - [CMU implementation exercise](https://www.cs.cmu.edu/~christos/courses/826.F14/HOMEWORKS/HW2/hw2.pdf)
+
+## Indian Buffet Process
+
+- [Original IBP paper](https://papers.nips.cc/paper/2882-infinite-latent-feature-models-and-the-indian-buffet-process)
+- [IBP introduction and review](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/reading/griffiths11a.pdf)
