@@ -1,2 +1,1 @@
-numpy
-sortedcontainers
+# All assessment drills intentionally use only the Python standard library.

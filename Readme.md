@@ -8,30 +8,23 @@ This guide is part of his journey in exploring and sharing knowledge within the 
 
 The tasks outlined in this document are crafted to emulate the complexity and breadth of coding assessments typically encountered during technical interviews or coding competitions 🧩. Each level introduces incrementally more complex problems, requiring a solid understanding of data structures, algorithms, and software engineering principles 📚.
 
+For the Anthropic-focused, evidence-labeled practice sequence, start with [`anthropic_prep/README.md`](anthropic_prep/README.md). It contains the high-signal reported scenario families, progressive candidate workspaces, and separate reference answers for review after each attempt.
+
 ## Pre-requisites
 
 Before diving into the tasks and running the tests outlined in this guide, it's crucial to ensure that your development environment is properly set up. Here are the prerequisites necessary to run the test and simulation effectively:
 
-1. **Python Installation**: Ensure that you have Python installed on your machine. This guide and the accompanying code are designed to work with Python 3.6 or newer. You can download Python from the official website at [python.org](https://www.python.org/downloads/). After installation, you can verify the installation by running `python --version` or `python3 --version` in your terminal or command prompt.
+1. **Python Installation**: Use Python 3.10 or newer for this local practice pack. CodeSignal publishes support for Python 3 but does not promise a fixed patch version, so the rules in your actual assessment invitation are authoritative.
 
-> **Important Note**: CodeSignal utilizes Python Version **3.10.6** for its assessments.
+2. **Familiarity with Terminal or Command Prompt**: Basic knowledge of using the terminal (Mac/Linux) or command prompt (Windows) will be beneficial. You will need it to run each drill's `test_solution.py` file.
 
-3. **Familiarity with Terminal or Command Prompt**: Basic knowledge of using the terminal (Mac/Linux) or command prompt (Windows) will be beneficial. You will need to use it to run the test scripts provided in the `test_simulation.py` file.
-
-4. **Install Required Python Packages**: Before starting with the tasks, it's essential to install the Python packages listed in the `requirements.txt` file. These packages include necessary libraries that might be used throughout the tasks in this guide. To install these packages, run the following command in your terminal or command prompt:
+3. **Install Required Python Packages**: Before starting with the tasks, it's essential to install the Python packages listed in the `requirements.txt` file. To install them, run the following command in your terminal or command prompt:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-   or
-
-   ```bash
-   /path/to/python3.10.6 -m pip install -r requirements.txt
-   ```
-
-   This command tells pip, Python's package installer, to install all the packages listed in the `requirements.txt` file. Ensure you are in the same directory as the `requirements.txt` file when running this command or provide the correct path to it. Installing these packages beforehand will ensure that you have all the necessary tools and libraries at your disposal, facilitating a smoother coding experience.
-   > **Important Note**: When installing Python and the required packages, it is crucial to ensure that the version of Python installed matches the version used by CodeSignal, which is **3.10.6**. Additionally, verify that your Integrated Development Environment (IDE) is configured to use the same Python interpreter. This consistency is essential for avoiding discrepancies in behavior or functionality due to differences in Python versions.
+   The file intentionally installs no third-party packages. Industry Coding Assessment drills should be solvable with the standard library.
 
 By ensuring these prerequisites are met, you will be well-prepared to engage with the tasks, run tests, and make the most out of this mock CodeSignal pre-screen assessment. Remember, a well-set-up development environment is key to a smooth and efficient coding experience.
 
@@ -40,13 +33,13 @@ By ensuring these prerequisites are met, you will be well-prepared to engage wit
 1. **Timing**: Set a strict time limit of 90 minutes for yourself to complete the tasks ⏳. This practice is designed to simulate the time constraints often present in real assessments, fostering the development of effective time management skills.
 2. **Sequential Progression**: Start with Level 1 and do not advance to the subsequent level until you have fully completed the preceding one 🛤️. This methodical approach ensures a gradual and thorough understanding of the challenges presented.
 
-3. **Testing and Development Environment**: Focus your coding efforts within the `simulation.py` file 🖥️. This file is where you will implement your solutions and simulate the operations described in the tasks.
+3. **Testing and Development Environment**: Focus your coding efforts within a drill's `solution.py` file 🖥️. Read `level1.md` through `level4.md` one at a time and add each newly unlocked interface.
 
-4. **Running Tests**: Utilize the provided `test_simulation.py` file to run unit tests against your code 🧪. This file contains test cases for each level, allowing you to verify the correctness of your solutions incrementally. To run the tests for a specific level, use the following command structure in your terminal or command prompt:
+4. **Running Tests**: Use the drill's `test_solution.py` file to verify each level incrementally 🧪. For example:
 
-   - For Level 1 tests: `python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_1`
-   - For Level 2 tests: `python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_2`
-   - For subsequent levels, adjust the `test_group_x` part of the command accordingly.
+   - For Level 1: `python3 -m unittest test_solution.TestChineseRestaurant.test_level_1_seating`
+   - For Level 2: `python3 -m unittest test_solution.TestChineseRestaurant.test_level_2_bulk_and_ranking`
+   - For subsequent levels, use the matching test name listed in that drill's `prompt.md`.
 
 5. **Refactoring**: As you progress through the levels, revisit and refactor your earlier solutions as needed to accommodate the additional functionality required by later tasks 🔧. This iterative process is key to developing scalable and maintainable software.
 
@@ -60,7 +53,7 @@ To ensure the fastest possible progression through the levels, consider the foll
 
 4. **Master the Art of Skimming**: Learn to quickly skim the task descriptions to identify the key requirements and constraints 🔍. This skill will allow you to start formulating your solution even as you finish reading the task.
 
-5. **Utilize Code Snippets and Libraries**: Where appropriate, use code snippets and libraries to avoid reinventing the wheel 🛠️. However, be cautious not to waste time trying to force a library to do something it's not well-suited for.
+5. **Use the Standard Library Well**: Be fluent with dictionaries, sets, sorting keys, `collections`, and `bisect`, but do not depend on third-party packages.
 
 6. **Parallelize Testing and Coding**: If possible, set up your environment so you can run tests on the code you've already written while continuing to work on other parts of the task 🔄. This can help identify issues early and reduce overall development time.
 
@@ -93,11 +86,11 @@ Contributing to this guide is a fantastic way to help others prepare for industr
 
 2. **Create New Questions**: Design your questions to mimic real-world coding assessments. Ensure they are clear, concise, and cover a range of difficulties. Each question should challenge a specific skill or set of skills relevant to coding assessments, such as algorithmic thinking, data structures, or problem-solving under time constraints.
 
-3. **Follow the Existing Structure**: Your questions should be similar in structure (but not content) to the ones found in the `Practice Assessments` directory, specifically the `file_storage` example. This consistency helps candidates familiarize themselves with the format and focus on solving the problems.
+3. **Follow the Existing Structure**: New questions should match the progressive structure under `anthropic_prep/oa_progressive`: four level files, a candidate workspace, grouped tests, and a separate reference solution.
 
 4. **Adhere to the PDF Guidelines**: The PDF in the repository outlines the rules for how questions should work. Please ensure your questions comply with these rules to maintain the quality and relevance of the assessments.
 
-5. **Submit Your Questions**: Once you have created your questions, place them in the `Practice Assessments` directory. If your questions are based on a new theme or concept not currently covered, consider creating a new subdirectory within `Practice Assessments` to organize them accordingly.
+5. **Submit Your Questions**: Place each new question in its own subdirectory under `anthropic_prep/oa_progressive`.
 
 6. **Open a Pull Request**: Submit your contributions via a pull request. In your pull request, provide a brief explanation of your questions and how they align with the objectives of the coding framework. Our team will review your submission and provide feedback if necessary.
 
@@ -118,10 +111,11 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
-Now you can update your solution code in the relevant simulation.py file as explained elsewhere in this README, then run the test file to verify your solution.
+Now you can update the relevant `solution.py` and run that drill's tests.
 
-For example, to run the test suite for the file storage problem, we run:
+For example, to run the Chinese Restaurant Process drill:
 
 ```bash
-python practice_assessments/file_storage/test_simulation.py
+cd anthropic_prep/oa_progressive/chinese_restaurant_process
+python3 test_solution.py
 ```
