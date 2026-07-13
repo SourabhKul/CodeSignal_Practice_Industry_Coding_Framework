@@ -23,6 +23,7 @@ Additional transfer drills:
 
 - `chinese_restaurant_process`
 - `indian_buffet_process`
+- `parcel_manager`
 - `time_versioned_kv`
 - `inventory_orders`
 - `package_manager`

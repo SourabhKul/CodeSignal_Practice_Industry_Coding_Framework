@@ -16,3 +16,4 @@
 | `text_editor` | basic edits | cursor editing | undo/redo | snapshots |
 | `chinese_restaurant_process` | deterministic seating | bulk/ranking | snapshots | forks/comparison |
 | `indian_buffet_process` | deterministic feature sampling | matrix/popularity | tags/recommendations | snapshots |
+| `parcel_manager` | parcel inventory | search/ranking | courier-gated status | version rollback |
